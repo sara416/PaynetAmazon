@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite1]" parallel="tests">
+  <test thread-count="1" verbose="5" name="TEST 1(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="All"/>
+        <include name="ForeignCountry"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.TestSet1_DeliverToScenarios">
+        <methods>
+          <include name="changeLocationForeignCountry"/>
+          <include name="siteRefresh"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.TestSet1_DeliverToScenarios -->
+    </classes>
+  </test> <!-- TEST 1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
